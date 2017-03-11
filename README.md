@@ -17,6 +17,26 @@ $ npm install --save medium-editor
 
 If all goes well, the angular2-medium-editor package should import medium-editor from your node_modules.
 
+Import the style-sheet files into your project:
+
+```css
+@import 'path/to/node_modules/medium-editor/dist/css/medium-editor.css';
+// Optionally import any pre-built themes you want to use
+@import 'path/to/node_modules/medium-editor/dist/css/themes/beagle.css';
+```
+
+If you are using `angular-cli`, you can add these in your .angular-cli.json file:
+
+```json
+...
+    "styles": [
+        "../node_modules/medium-editor/dist/css/medium-editor.css",
+        "../node_modules/medium-editor/dist/css/themes/beagle.css",
+        "styles.css"
+    ],
+...
+```
+
 Finally, import the directive into your project:
 
 ```typescript
